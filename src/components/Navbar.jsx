@@ -13,7 +13,7 @@ const Navbar = () => {
             About
           </li>
         </Link>
-        <Link to='/'>
+        <Link to='/vans'>
           <li className="cursor-pointer font-inter font-semibold text-base text-[#4D4D4D]">
             Vans
           </li>
