@@ -1,12 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <>
-      <Navbar />
       <section className="home flex flex-col justify-center space-y-7 text-center items-center">
         <h1 className="font-inter font-extrabold text-white text-4xl">
           You got the travel plans, we got the travel vans.
@@ -22,7 +19,6 @@ const Home = () => {
           <button>Find your van</button>
         </Link>
       </section>
-      <Footer />
     </>
   );
 }

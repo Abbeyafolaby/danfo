@@ -1,13 +1,10 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import about from '../assets/aboutimg.png'
 import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
     <>
-      <Navbar />
       <section className="font-inter bg-[#FFF7ED] text-left md:max-w-2xl md:m-auto pb-12 md:flex md:flex-col md:text-center md:items-center md:justify-center">
         <img src={about} alt="" className="max-w-full" />
         <div className="mb-14  px-4 pt-4 space-y-3 text-[#161616]">
@@ -37,7 +34,6 @@ const About = () => {
           </Link>
         </div>
       </section>
-      <Footer />
     </>
   );
 }
