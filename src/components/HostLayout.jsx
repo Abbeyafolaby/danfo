@@ -13,23 +13,29 @@ const HostLayout = () => {
     <>
       <ul className="flex gap-x-4 p-4">
         <NavLink
-          to="/host"
+          to="."
           end
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           Dashboard
         </NavLink>
         <NavLink
-          to="/host/review"
+          to="income"
+          style={({ isActive }) => (isActive ? activeStyles : null)}
+        >
+          income
+        </NavLink>
+        <NavLink
+          to="vans"
+          style={({ isActive }) => (isActive ? activeStyles : null)}
+        >
+          Vans
+        </NavLink>
+        <NavLink
+          to="review"
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           review
-        </NavLink>
-        <NavLink
-          to="/host/income"
-          style={({isActive}) => (isActive ? activeStyles : null)}
-        >
-          income
         </NavLink>
       </ul>
       <Outlet />
